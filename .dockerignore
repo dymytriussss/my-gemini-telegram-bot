@@ -1,0 +1,27 @@
+# Файл с секретами (не должен попасть в образ!)
+.env
+
+# Папка виртуального окружения Python
+venv
+/venv/
+
+# Системные файлы Git
+.git
+.gitignore
+
+# Системные файлы Docker
+.dockerignore
+Dockerfile
+
+# Папка настроек IDE
+.idea/
+
+# Кэш Python
+__pycache__/
+*.py[cod]
+
+# Системные файлы macOS
+.DS_Store
+
+# Логи и другие временные файлы
+*.log

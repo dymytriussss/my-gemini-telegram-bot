@@ -6,9 +6,9 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 
 # --- НАСТРОЙКИ ---
 # ВАЖНО: Вставьте сюда ваши реальные токены!
-TELEGRAM_BOT_TOKEN = "7848520955:AAHsTbUT1wRugd2Z3TigBNWxz9XTkWG9hEs"
+TELEGRAM_BOT_TOKEN =  os.getenv("TELEGRAM_BOT_TOKEN")
 
-GEMINI_API_KEY = "AIzaSyBCkO83F3TZqNIJcvsxPkpNnQYMR4Ua8lg"
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 # Проверка, что токены были заменены (простая)
 if "ВАШ_ТЕЛЕГРАМ_БОТ_ТОКЕН" in TELEGRAM_BOT_TOKEN or "ВАШ_GOOGLE_GEMINI_API_КЛЮЧ" in GEMINI_API_KEY:
